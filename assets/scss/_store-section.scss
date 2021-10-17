@@ -1,0 +1,38 @@
+/*===================
+        SECTION STORE CSS     
+=====================*/
+.store__article {
+  display: flex;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+.store__article__content {
+  flex-basis: 50%;
+  background-color: $primary-color;
+  color: $white-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2rem;
+  @media screen and (max-width: 767px) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-weight: 300;
+    line-height: 1.6;
+  }
+}
+.store__article__img {
+  flex-basis: 50%;
+  height: auto;
+  min-height: 300px;
+  background-size: cover;
+}
